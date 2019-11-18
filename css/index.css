@@ -1,0 +1,475 @@
+.flex100 {
+  display: flex;
+  width: 100%;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  font-family: 'flood-std', sans-serif;
+}
+.header,
+.footer {
+  display: flex;
+  width: 96%;
+  padding: 1%;
+  margin: 1%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.header a,
+.footer a {
+  font-size: 3rem;
+}
+.headerNav {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0.5%;
+}
+.companyName {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+html,
+body {
+  background-color: #404e5c;
+  color: #b7c3f3;
+  font-family: 'flood-std', sans-serif;
+  display: flex;
+  width: 96%;
+  padding: 1%;
+  margin: 1%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+.container {
+  width: 96%;
+  margin: 0 auto;
+  padding-left: 1%;
+}
+#mainPage {
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 3rem;
+}
+.btn {
+  display: flex;
+  width: 85%;
+  background-color: #cf1259;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #4f6272;
+  padding: 4% 2% 4% 2%;
+  font-size: 16px;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  transform: translateY(0);
+  opacity: 0;
+  animation-name: titleAnimation;
+  animation-timing-function: ease;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+p {
+  transform: translateY(0);
+  opacity: 0;
+  animation-name: titleAnimation;
+  animation-timing-function: ease;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+img {
+  transform: translateY(0);
+  opacity: 0;
+  animation-name: titleAnimation;
+  animation-timing-function: ease;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  max-width: 100%;
+}
+a {
+  color: #dd7596;
+}
+a:hover {
+  color: #cf1259;
+}
+.checkList {
+  width: 100%;
+  margin-left: 10%;
+}
+#features {
+  margin-bottom: 10%;
+}
+.featureAlt {
+  text-align: left;
+  justify-content: left;
+}
+.sqCheck {
+  border: 1px solid #4f6272;
+  border-radius: 10px;
+  max-width: 5%;
+}
+.altH1 {
+  color: #cf1259;
+  display: flex;
+  width: 96%;
+  padding: 1%;
+  margin: 1%;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: right;
+}
+.mainH1 {
+  display: flex;
+  width: 96%;
+  padding: 1%;
+  margin: 1%;
+  justify-content: center;
+  align-items: center;
+}
+#content1h12 {
+  margin-left: 20%;
+}
+#content2h1 {
+  margin-right: 20%;
+}
+#content3h1 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  justify-content: center;
+  text-align: center;
+}
+#content3 {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  justify-content: center;
+  text-align: center;
+}
+#content4 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#content4 img {
+  margin-left: 10%;
+  max-height: 650px;
+}
+#content4h1 {
+  align-items: center;
+  height: 100%;
+}
+.content4c {
+  width: 100%;
+}
+.content4c h1 {
+  margin-top: 13%;
+  margin-bottom: 13%;
+  justify-content: left;
+  align-items: left;
+}
+#content5 {
+  text-align: center;
+}
+#content5 #content5h1 {
+  text-align: center;
+  justify-content: center;
+}
+.aboutRow {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+#about {
+  width: 70%;
+  justify-content: center;
+}
+.teamRight {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: right;
+  text-align: right;
+}
+.page {
+  display: none;
+}
+#login {
+  width: 65%;
+  margin: 5%;
+}
+.panel-default {
+  margin: 5%;
+  width: 100%;
+}
+.mainH {
+  width: 100%;
+}
+.mainPage {
+  justify-content: center;
+}
+.row {
+  margin: 0;
+}
+#faq {
+  font-size: 2rem;
+}
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    left: 200px;
+    top: 50px;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+    left: 200px;
+    top: 50px;
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+    left: 200px;
+    top: 50px;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    left: 200px;
+    top: 50px;
+  }
+}
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  cursor: pointer;
+}
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #4f6272;
+  z-index: 9;
+}
+/* Add styles to the form container */
+.form-container {
+  width: 100%;
+  padding: 10px;
+  background-color: #404e5c;
+  justify-content: center;
+  text-align: center;
+}
+.form-container .row {
+  margin: 0;
+}
+/* Full-width input fields */
+.form-container input {
+  width: 60%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid #cf1259;
+  background: #404e5c;
+}
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus {
+  background-color: #dd7596;
+  outline: none;
+  color: #dd7596;
+}
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #cf1259;
+  color: #4f6272;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 45%;
+  max-height: 25%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  justify-content: center;
+}
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #4f6272;
+  color: #b7c3f3;
+}
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+.formClass {
+  width: 100%;
+  justify-content: center;
+}
+label,
+input {
+  font-size: 2rem;
+  color: #b7c3f3;
+}
+.formRow {
+  justify-content: center;
+  padding: 0;
+}
+#message {
+  width: 45%;
+  height: 35%;
+  font-size: 2rem;
+}
+textarea {
+  background-color: #4f6272;
+  color: #b7c3f3;
+}

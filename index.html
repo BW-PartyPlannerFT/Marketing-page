@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- change: may need to change font -->
     <link rel="stylesheet" href="https://use.typekit.net/tdu5wlj.css">
-    <link rel="stylesheet/less" type="text/css" href="style.less">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Download PPlannr today, the party planning app that helps you put on the perfect party.</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -16,169 +23,407 @@
     <!-- change:  add bootstrap layout classes to all sections -->
     <section class="container">
         <!-- change: put order in css later -->
-        <header id="header" class="header">
-            <nav id="headerNav2" class="headerNav" order="2">
-                <div><a href="index.html">Home</a></div>
-                <div><a href="#features">Features</a></div>
-                <div><a href="#login">Log in</a>
-            </nav>
-            <nav id="headerNav2" class="headerNav" order="3">
-                <div><a href="#support">Support</a></div>
-                <div><a href="#about">About</a></div>
-            </nav>
-            <section id="footerCompanyName" class="companyName" order="1">
+        <header id="header" class="header row">
+            <section id="headerCompanyName" class="companyName row" order="1">
                 <div>
                     <a href="index.html" class="companyName">PPlannr</a>
                 </div>
             </section>
+            <nav id="headerNav2" class="headerNav row" order="2">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="#features" onclick="toggleMainFrameVis('features');">Features</a></div>
+                <div><a href="#login" onclick="toggleMainFrameVis('login');">Log in</a>
+            </nav>
+            <nav id="headerNav2" class="headerNav row" order="3">
+                <div><a href="#support" onclick="toggleMainFrameVis('support');">Support</a></div>
+                <div><a href="#about" onclick="toggleMainFrameVis('about');">About</a></div>
+            </nav>
 
         </header>
 
         <section id="content1" class="bodyContent">
             <div>
-                <h1 id="content1h1" class="mainH1">Whether you're planning a party that looks like this...</h1>
+                <h1 id="content1h1" class="mainH1">Whether you're planning this...</h1>
             </div>
             <div><img src="img/wedding2.jpg" alt="large fancy party, wedding"></div>
         </section>
 
         <section id="content2" class="bodyContent">
-            <div>
-                <h1 id="content2h1" class="mainH1">...or like this...</h1>
-            </div>
+            <h1 id="content2h1" class="altH1">...or this...</h1>
             <div><img src="img/2-dog-party.jpg" alt="birthday party for a dog with cake with candles on a table"></div>
         </section>
 
-        <section id="content3" class="bodyContent">
-            <div>
-                <h1 id="content3h1">Trust us to help you organize your party,</h1>
-            </div>
+        <section id="content3" class="bodyContent row">
+            <h1 id="content3h1">Trust us to help you organize your party,</h1>
         </section>
-        <section id="content4" class="bodyContent">
-            <div>
-                <h1 id="content4h1" class="mainH1">And you won't forget a thing.</h1>
-            </div>
-            <div><img src="img/3-fancy-party3.jpg"
+        <section id="content4" class="bodyContent row">
+            <div class="col-8">
+                <img src=" img/3-fancy-party3.jpg"
                     alt="outside fancy party on the water with lights/lanterns hanging up.">
             </div>
-        </section>
+            <div class="col-4">
 
-        <section id="content5" class="bodyContent">
-            <div>
-                <h1 id="content5h1" class="altH1">Download PPlannr today.</h1>
+                <div id="content4c1" class="content4c row">
+                    <h1 id="content4h1" class="mainH1">And</h1>
+                </div>
+                <div id="content4c2" class="content4c row">
+                    <h1 id="content4h1" class="mainH1">you</h1>
+                </div>
+                <div id="content4c3" class="content4c row">
+                    <h1 id="content4h1" class="mainH1">won't</h1>
+                </div>
+                <div id="content4c4" class="content4c row">
+                    <h1 id="content4h1" class="mainH1">forget</h1>
+                </div>
+                <div id="content4c5" class="content4c row">
+                    <h1 id="content4h1" class="mainH1">a thing.</h1>
+                </div>
+                </h1>
             </div>
         </section>
 
-        <section id="mainPage" class="row">
+        <section id="content5" class="bodyContent row">
+            <h1 id="content5h1" class="altH1">Download PPlannr today.</h1>
+        </section>
 
-            <section id="features" class="row">
-                <div>
-                    <h1 id="mainPageH1f" class="mainH1">Features:</h1>
+        <section id="mainPage" class="mainPage row">
+
+            <section id="features" class="row page">
+
+                <div id="mainPageH1f" class="row mainH1">
+                    <h1>Features:</h1>
                 </div>
 
-                <div id="sqCheck1" class="sqCheck"></div>
-                <div>
-                    <h3 id="feature1" class="feature">Add a party</h3>
+                <div class="row checkList">
+                    <div id="sqCheck1" class="sqCheck col-2"></div>
+                    <div id="feature1" class="featureAlt col-10">
+                        <h3>Add a party</h3>
+                    </div>
                 </div>
-
-                <div id="sqCheck2" class="sqCheck"></div>
-                <div>
-                    <h3 id="feature2" class="featureAlt">Plan the entertainment</h3>
                 </div>
-
-                <div id="sqCheck3" class="sqCheck"></div>
-                <div>
-                    <h3 id="feature3" class="feature">Shopping list that helps you stay under budget</h3>
+                <div class="row checkList">
+                    <div id="sqCheck2" class="sqCheck col-2"></div>
+                    <div class="featureAlt col-10">
+                        <h3 id="feature2" class="">Plan the entertainment</h3>
+                    </div>
                 </div>
-
-                <div id="sqCheck4" class="sqCheck"></div>
-                <div>
-                    <h3 id="feature4" class="featureAlt">Send invites</h3>
+                <div class="row checkList">
+                    <div id="sqCheck3" class="sqCheck col-2"></div>
+                    <div class="featureAlt col-10">
+                        <h3 id="feature3" class="">Shopping list that helps you stay under budget</h3>
+                    </div>
                 </div>
-
-                <div id="sqCheck5" class="sqCheck"></div>
-                <div>
-                    <h3 id="feature5" class="feature">Add pictures to the party mood board</h3>
+                <div class="row checkList">
+                    <div id="sqCheck4" class="sqCheck col-2"></div>
+                    <div class="col-10">
+                        <h3 id="feature4" class="featureAlt">Send invites</h3>
+                    </div>
                 </div>
-
-                <div id="sqCheck6" class="sqCheck"></div>
-                <div>
-                    <h3 id="feature6" class="featureAlt">Enjoy your perfect party</h3>
+                <div class="row checkList">
+                    <div id="sqCheck5" class="sqCheck col-2"></div>
+                    <div class="col-10">
+                        <h3 id="feature5" class="featureAlt">Add pictures to the party mood board</h3>
+                    </div>
+                </div>
+                <div class="row checkList">
+                    <div id="sqCheck6" class="sqCheck col-2"></div>
+                    <div class="col-10">
+                        <h3 id="feature6" class="featureAlt">Enjoy your perfect party</h3>
+                    </div>
+                </div>
                 </div>
             </section>
-            <section id="support" class="row">
-                <div>
+
+            <section id="support" class="aboutRow row page">
+                <div class="aboutRow row">
                     <h1 id="mainPageH1s" class="mainH1">Support:</h1>
+                    <h2 id="mainPageH2a" class="mainH2">Frequently Asked Questions:</h2>
+                </div>
+                <div id="faq" class="aboutRow row">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                        Collapsible Group 1</a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                        Collapsible Group 2</a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                        Collapsible Group 3</a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mainPageH1l" class="row mainH" order="1">
+                    <h2>Contact Us:</h2>
+                </div>
+                <div class="row formClass" id="contactForm" order="2">
+                    <form action="/action_page.php" class="form-container">
+                        <div class="row formRow">
+                            <label for="Name"><b>Name</b></label>
+                        </div>
+                        <div class="row formRow">
+
+                            <input type="username" placeholder="Enter your name." name="name" required>
+                        </div>
+                        <div class="row formRow">
+
+                            <label for="email"><b>E-mail Address</b></label>
+                        </div>
+                        <div class="row formRow">
+                            <input type="email" placeholder="Enter your e-mail address." name="email" required>
+                        </div>
+
+                        <div class="row formRow">
+
+                            <label for="message"><b>Message</b></label>
+                        </div>
+                        <div class="row formRow">
+                            <textarea id="message" placeholder="Write your message here." name="message" required
+                                rows="10" cols="35"></textarea>
+
+                        </div>
+
+                        <div class="row formRow">
+
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                        <div class="row formRow">
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section id="about" class="row page">
+
+                <div id="mainPageH1a" class="aboutRow mainH1 row">
+                    <h1>The Team:</h1>
                 </div>
 
-            </section>
-            <!-- change: put order in css later -->
-            <section id="about" class="row">
-                <div>
-                    <h1 id="mainPageH1a" class="mainH1">The Team:</h1>
-                </div>
-                <div>
-                    <img src="img/jOmollo.jpg" alt="picture of Jacqueline Omollo" id="jOmollo">
-                    <h3 id="projectLeadName" class="teamName">Jacqueline Omollo</h3>
-                    <h3 id="projectLeadTitle" class="teamTitle">Project Lead</h3>
-                </div>
-                <div>
-                    <h3 id="backendDeveloperName" class="teamName">Brenda Joshua</h3>
-                    <h3 id="backendDeveloperTitle" class="teamTitle">Backend Developer</h3>
-                    <img src="img/bJoshua.jpg" alt="picture of Brenda Joshua" id="bJoshua">
-                </div>
-                <div>
-                    <img src="img/cFletcher.jpg" alt="picture of Christine Fletcher" id="cFletcher">
-                    <h3 id="webReactIIDeveloperName" class="teamName">Christine Fletcher</h3>
-                    <h3 id="webReactIIDeveloperTitle" class="teamTitle">Web React II Developer</h3>
-                </div>
-                <div>
+                <div class="aboutRow row">
+
+                    <div class="col-3" order="1">
+                        <img src="img/jOmollo.png" alt="picture of Jacqueline Omollo" id="jOmollo" class="teamImage">
+                    </div>
+
+                    <div class="col-9 teamRight" order="2">
+
+                        <div class="aboutRow row">
+                            <h3 id="projectLeadName" class="teamName teamRight">Jacqueline Omollo</h3>
+                        </div>
+
+                        <div class="aboutRow row">
+                            <h3 id="projectLeadTitle" class="teamTitle teamRight">Project Lead</h3>
+                        </div>
+
+                    </div>
+
+                </div> <!-- Closes JOmollo's row -->
+
+                <div class="aboutRow row">
+
+                    <div class="col-9" order="1">
+                        <div class="aboutRow row">
+                            <h3 id="backendDeveloperName" class="teamName">Brenda Joshua</h3>
+                        </div>
+                        <div class="aboutRow row">
+                            <h3 id="backendDeveloperTitle" class="teamTitle">Backend Developer</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-3" order="2">
+                        <img src="img/bJoshua.png" alt="picture of Brenda Joshua" id="bJoshua" class="teamImage">
+                    </div>
+
+                </div> <!-- Closes bJoshua's row -->
+
+
+
+                <div class="aboutRow row teamRight">
+
+                    <div class="col-3" order="1">
+                        <img src="img/cFletcher.png" alt="picture of Christine Fletcher" id="cFletcher"
+                            class="teamImage">
+                    </div>
+
+                    <div class="col-9" order="2">
+
+                        <div class="aboutRow row">
+                            <h3 id="webReactIIDeveloperName" class="teamName teamRight">Christine Fletcher</h3>
+                        </div>
+
+                        <div class="aboutRow row">
+                            <h3 id="webReactIIDeveloperTitle" class="teamTitle teamRight">Web React II Developer</h3>
+                        </div>
+
+                    </div>
+
+                </div> <!-- Closes cFletcher's row -->
+
+                <div class="aboutRow row">
                     <!-- change: This is where you last left off. -->
-                    <h3 id="webReactIDeveloper1Name" class="teamName">Jordan Covo</h3>
-                    <h3 id="webReactIDeveloper1Title" class="teamTitle">Web React I Developer</h3>
+
+                    <div class="col-9" order="2">
+                        <div class="aboutRow row">
+                            <h3 id="webReactIDeveloper1Name" class="teamName">Jordan Covo</h3>
+                        </div>
+                        <div class="aboutRow row">
+                            <h3 id="webReactIDeveloper1Title" class="teamTitle">Web React I Developer</h3>
+                        </div>
+                    </div>
+                    <div class="col-3" order="1">
+                        <img src="img/jCovo.png" alt="picture of Jordan Covo" id="jCovo" class="teamImage">
+                    </div>
+                </div> <!-- Closes jCovo's row -->
+
+                <div class="aboutRow row">
+
+
+                    <div class="col-9" order="2">
+
+                        <div class="row">
+                            <h3 id="webReactIDeveloper2Name" class="teamName">Shaqib Habib</h3>
+                        </div>
+
+                        <div class="row">
+                            <h3 id="webReactIDeveloper2Title" class="teamTitle">Web React I Developer</h3>
+                        </div>
+                    </div>
+                    <div class="col-3" order="1">
+                        <img src="img/sHabib.png" alt="picture of Shaqib Habib" id="sHabib" class="teamImage">
+                    </div>
+                </div> <!-- Closes sHabib's row -->
+
+                <div class="aboutRow row teamRight">
+                    <div class="col-3" order="2">
+                        <img src="img/eIngram.png" alt="picture of Erica Ingram" id="eIngram" class="teamImage">
+                    </div>
+                    <div class="col-9" order="1">
+
+                        <div class="row">
+                            <h3 id="webUIDeveloperName" class="teamName teamRight">Erica Ingram</h3>
+                        </div>
+                        <div class="row">
+                            <h3 id="webUIDeveloper" class="teamTitle teamRight">Web UI Developer</h3>
+                        </div>
+                    </div>
+                </div> <!-- Closes eIngram's row -->
+
+            </section>
+
+
+            <section id="login" class="row page">
+
+                <div id="mainPageH1l" class="row mainH" order="1">
+                    <h2>Log In:</h2>
                 </div>
-                <div>
-                    <h3 id="webReactIDeveloper2Name" class="teamName">Shaqib Habib</h3>
-                    <h3 id="webReactIDeveloper2Title" class="teamTitle">Web React II Developer</h3>
+                <div class="row formClass" id="contactForm" order="2">
+                    <form action="/action_page.php" class="form-container">
+                        <div class="row formRow">
+                            <label for="username"><b>Username</b></label>
+                        </div>
+                        <div class="row formRow">
+
+                            <input type="username" placeholder="Enter your username." name="name" required>
+                        </div>
+                        <div class="row formRow">
+
+                            <label for="password"><b>Password</b></label>
+                        </div>
+                        <div class="row formRow">
+                            <input type="password" placeholder="Enter your password." name="password" required>
+                        </div>
+                        <div class="row formRow">
+
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                        <div class="row formRow">
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </div>
+                    </form>
                 </div>
-                <div>
-                    <h3 id="webUIDeveloperName" class="teamName">Erica Ingram</h3>
                 </div>
 
             </section>
 
         </section>
 
-        <section id="login" class="row">
-            <div>
-                <h1 id="mainPageH1l" class="mainH">Log In:</h1>
-            </div>
-
-            <div>
-                <a href="#" class="companyName">PPlannr</a>
-            </div>
-        </section>
         <!-- change: put order in css later -->
-        <footer id="footer" class="footer">
-            <nav id="footerNav1" class="headerNav" order="1">
+        <footer id="footer" class="footer row">
+            <nav id="footerNav2" class="headerNav row" order="1">
                 <div><a href="index.html">Home</a></div>
-                <div><a href="#features">Features</a></div>
-                <div><a href="#login">Log in</a></div>
+                <div><a href="#features" onclick="toggleMainFrameVis('features');">Features</a></div>
+                <div><a href="#login" onclick="toggleMainFrameVis('login');">Log in</a>
             </nav>
-            <nav id="footerNav2" class="headerNav" order="2">
-                <div><a href="#support">Support</a></div>
-                <div><a href="#about">About</a></div>
+            <nav id="footerNav2" class="headerNav row" order="2">
+                <div><a href="#support" onclick="toggleMainFrameVis('support');">Support</a></div>
+                <div><a href="#about" onclick="toggleMainFrameVis('about');">About</a></div>
             </nav>
-            <section id="footerCompanyName" class="companyName" order="3">
-                <div>
-                    <a href="index.html" class="companyName">PPlannr</a>
-                </div>
+            <section id="footerCompanyName" class="companyName row" order="3">
+                <a href="index.html" class="companyName">PPlannr</a>
             </section>
         </footer>
 
 
 
     </section>
+    <script>
+        function toggleMainFrameVis(pageID) {
+            console.log(pageID);
+            let d;
+            let x;
+            // if baseClass of any of the three sections is showing, set to hide
+            // loops through all of the divs labeled with the class name.
+            d = document.getElementsByClassName('page');
+            console.log(d.length);
+            for (x = 0; x < d.length; x++) {
+                console.log(d[x] + ' through class if');
+                d[x].style.display = 'none';
+            }
+            console.log('pageID is ' + pageID);
+            d = document.getElementById(pageID);
+            d.style.display = "flex";
 
+        }
+        // when dom is ready, it loads main section as default
+
+        $(document).ready(function () {
+            let d = document.getElementById('features');
+            d.style.display = "flex";
+        });
+    </script>
 </body>
 
 </html>
