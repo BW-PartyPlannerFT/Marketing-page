@@ -3,7 +3,7 @@ body {
 	background-color: @outerSpace;
 	color: @paleBlue;
 	font-family: @font;
-	.alignSpread(space-between, center);
+	.alignSpread(space-between, center, center);
 	margin: 0 auto;
 	padding: 0;
 	font-size: 62.5%;
@@ -12,14 +12,17 @@ body {
 
 .container {
 	width: 96%;
-	margin: 0 auto;
-	padding-left: 1%;
+	padding: 0;
 	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 #mainPage {
-	justify-content: center;
-	text-align: center;
+	.alignSpread(center, center, center);
+}
+
+.row {
+	margin: 0;
 }
 
 h1 {
@@ -34,49 +37,24 @@ h3 {
 	font-size: 3rem;
 }
 
-// home // usage
-
-.btn {
-	.btnMixin(center, center, 10px);
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-}
-
-p {
-	.sharedAnimation(0, titleAnimation, 4s);
-}
-
 img {
 	max-width: 100%;
 }
 
 a {
 	color: @paleRed;
+
+	&:hover {
+		color: @debianRed;
+	}
 }
 
-a:hover {
-	color: @debianRed;
-}
-
-.checkList {
-	width: 100%;
-	margin-left: 10%;
-}
-
-#features {
-	margin-bottom: 10%;
-	.pageAnimation(0s);
-}
-
-#support {
-	.mainContentAnimation(h1Right, 0s);
+.page {
+	display: none;
 	.pageAnimation(0s);
 	overflow-y: hidden;
+	justify-content: center;
+	width: 70%;
 }
 
 .featureAlt {
@@ -84,135 +62,13 @@ a:hover {
 	justify-content: left;
 }
 
-.sqCheck {
-	border: 1px solid @lightCoal;
-	border-radius: 10px;
-	max-width: 5%;
-}
-
 .altH1 {
 	color: @debianRed;
-	.alignSpread(space-between, center);
-	justify-content: right;
+	.alignSpread(right, center, center);
 }
 
 .mainH1 {
-	.alignSpread(center, center);
-}
-
-#content1 {
-	.mainContentAnimation(h1Left, 0s);
-}
-
-#content1h12 {
-	margin-left: 20%;
-}
-
-#content2 {
-	.mainContentAnimation(h1Right, 3s);
-}
-
-#content2h1 {
-	margin-right: 20%;
-}
-
-#content3h1 {
-	margin-top: 5%;
-	margin-bottom: 5%;
-	justify-content: center;
-	text-align: center;
-}
-
-#content3 {
-	display: flex;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	justify-content: center;
-	text-align: center;
-	.mainContentAnimation(h1Left, 6s);
-}
-
-#content4 {
-	margin-top: 2%;
-	margin-bottom: 2%;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	.mainContentAnimation(h1Right, 8s);
-
-	img {
-		margin-left: 10%;
-		max-height: 650px;
-	}
-}
-
-#content4h1 {
-	align-items: center;
-	height: 100%;
-}
-
-.content4c {
-	width: 100%;
-
-	h1 {
-		margin-top: 13%;
-		margin-bottom: 13%;
-		justify-content: left;
-		align-items: left;
-	}
-}
-
-#content5 {
-	text-align: center;
-	.mainContentAnimation(h1Left, 10s);
-
-	#content5h1 {
-		text-align: center;
-		justify-content: center;
-	}
-}
-
-.aboutRow {
-	width: 100%;
-	align-items: center;
-	text-align: center;
-}
-
-#about {
-	width: 70%;
-	justify-content: center;
-	.pageAnimation(0s);
-	overflow-y: hidden;
-}
-
-.teamRight {
-	display: flex;
-	width: 100%;
-	flex-wrap: wrap;
-	justify-content: right;
-	text-align: right;
-}
-
-.page {
-	display: none;
-}
-
-#login {
-	width: 65%;
-	margin: 5%;
-	.pageAnimation(0s);
-	overflow-y: hidden;
-
-	.mainH {
-		justify-content: center;
-	}
-}
-
-.panel-default {
-	margin: 2.5% 0 2.5% 0;
-	width: 100%;
-	align-content: left;
-	text-align: left;
+	.alignSpread(center, center, center);
 }
 
 .mainH {
@@ -223,40 +79,121 @@ a:hover {
 	justify-content: center;
 }
 
-.row {
-	margin: 0;
+#content1 {
+	.mainContentAnimation(h1Left, 0s);
+
+	h1 {
+		margin: 0 0 0 20%;
+	}
+}
+
+#content2 {
+	.mainContentAnimation(h1Right, 3s);
+
+	h1 {
+		margin: 0 20% 0 0;
+	}
+}
+
+#content3 {
+	.alignSpread(center, center, center);
+	.mainContentAnimation(h1Left, 6s);
+	margin: 5% 0 5% 0;
+}
+
+#content4 {
+	.alignSpread(space-evenly, center, center);
+	margin: 2% 0 2% 0;
+	flex-wrap: wrap;
+	.mainContentAnimation(h1Right, 8s);
+
+	img {
+		margin: 0 0 0 10%;
+		max-height: 650px;
+	}
+
+	h1 {
+		align-items: center;
+		height: 100%;
+	}
+}
+
+.content4c {
+	width: 100%;
+
+	h1 {
+		margin: 13% 0 13% 0;
+		justify-content: left;
+		align-items: left;
+	}
+}
+
+#content5 {
+	text-align: center;
+	.mainContentAnimation(h1Left, 10s);
+
+	h1 {
+		color: @debianRed;
+		.alignSpread(center, center, center);
+	}
+}
+
+.aboutRow {
+	.alignSpread(center, center, center);
+}
+
+.teamRight {
+	.alignSpread(right, right, right);
+	flex-wrap: wrap;
+}
+
+#features {
+	margin-bottom: 10%;
+
+	.checkList {
+		width: 100%;
+		margin: 0 0 0 10%;
+	}
+
+	.sqCheck {
+		border: 1px solid @lightCoal;
+		border-radius: 10px;
+		max-width: 5%;
+	}
 }
 
 #faq {
+	width: 100%;
 	font-size: 2rem;
+
+	.panel-default {
+		flex-wrap: wrap;
+	}
+
+	.panel-heading {
+		width: 100%;
+	}
 }
 
-@keyframes titleAnimation {
-	0% {
-		transform: translateY(-50px);
-		opacity: 0;
-		left: 200px;
-		top: 50px;
-	}
+.panel-default {
+	.alignSpread(left, left, left);
+	margin: 2.5% 0 2.5% 0;
+}
 
-	20% {
-		transform: translateY(0);
-		opacity: 1;
-		left: 200px;
-		top: 50px;
-	}
+.panel-group {
+	width: 80%;
+	flex-wrap: wrap;
+}
 
-	80% {
-		transform: translateY(0);
-		opacity: 1;
-		left: 200px;
-		top: 50px;
-	}
+#login {
+	width: 70%;
+	margin: 5%;
 
-	100% {
-		transform: translateY(0);
-		opacity: 1;
-		left: 200px;
-		top: 50px;
+	.mainH {
+		justify-content: center;
 	}
+}
+
+.btn {
+	.btnMixin(center, center, 10px);
 }

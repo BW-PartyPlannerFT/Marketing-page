@@ -1,5 +1,209 @@
 @media (@mobile) {
+	html,
+	body,
+	.container {
+		margin: 0;
+		width: 100%;
+	}
+
+	.header,
+	.footer {
+		a {
+			font-size: 2rem;
+		}
+
+		width: 100%;
+		justify-content: space-evenly;
+		margin: 0%;
+		padding: 0;
+		z-index: 3;
+	}
+
+	#content4 {
+		img {
+			margin: 0 0 0 3%;
+		}
+
+		h1 {
+			font-size: 3rem;
+		}
+	}
+
+	#content5 {
+		width: 100%;
+	}
+
+	#features {
+		width: 100%;
+		margin-bottom: 10%;
+
+		h1 {
+			margin-bottom: 2%;
+		}
+
+		h3 {
+			font-size: 2.5rem;
+		}
+
+		.checkList {
+			width: 100%;
+			margin: 0 0 0 3%;
+		}
+
+		.sqCheck {
+			border: 1px solid @lightCoal;
+			border-radius: 10px;
+			margin-bottom: 2%;
+			max-width: 10%;
+			max-height: 45px;
+		}
+
+		.featureAlt {
+			margin-bottom: 2%;
+		}
+	}
+
+	.page {
+		width: 100%;
+	}
+
+	#support {
+		overflow-x: hidden;
+
+		h2 {
+			margin-top: 10%;
+			text-align: center;
+			width: 100%;
+		}
+
+		textarea {
+			width: 80%;
+		}
+
+		input {
+			width: 80%;
+		}
+
+		.form-container {
+			width: 100%;
+
+			#buttonRow {
+				display: flex;
+				flex-wrap: nowrap;
+				width: 100%;
+
+				.btn {
+					margin: 0;
+					margin-top: 3.5%;
+					width: 70%;
+				}
+			}
+		}
+
+		.form-container input {
+			width: 100%;
+		}
+	}
+
+	.aboutRow {
+		flex-wrap: nowrap;
+	}
+
+	.teamName {
+		font-size: 2.25rem;
+	}
+
+	.teamTitle {
+		font-size: 2.25rem;
+	}
+
+	.teamRight {
+		justify-content: center;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.col-3 {
+		width: 45%;
+		max-width: 45%;
+		margin: 0;
+		padding: 0;
+	}
+
+	#login {
+		.form-container {
+			width: 100%;
+
+			#buttonRow {
+				display: flex;
+				flex-wrap: nowrap;
+				width: 100%;
+
+				.btn {
+					margin: 0;
+					width: 70%;
+				}
+			}
+		}
+
+		.form-container input {
+			width: 100%;
+		}
+	}
 }
 
 @media (@tablet) {
+	#content1 {
+		h1 {
+			margin: 0%;
+		}
+	}
+
+	#content4 {
+		h1 {
+			margin-left: 10%;
+		}
+	}
+
+	#content5 {
+		width: 100%;
+
+		a {
+			font-size: 3.5rem;
+		}
+	}
+
+	#features {
+		width: 100%;
+		margin-bottom: 10%;
+
+		h1 {
+			margin-bottom: 2%;
+		}
+
+		.checkList {
+			width: 100%;
+			margin: 0 0 0 3%;
+		}
+
+		.sqCheck {
+			border: 1px solid @lightCoal;
+			border-radius: 10px;
+			margin-bottom: 2%;
+			max-width: 10%;
+			max-height: 45px;
+		}
+
+		.featureAlt {
+			margin-bottom: 2%;
+		}
+	}
+
+	.header,
+	.footer {
+		a {
+			font-size: 2.5rem;
+		}
+	}
 }

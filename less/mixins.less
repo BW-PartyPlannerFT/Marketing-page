@@ -9,22 +9,17 @@
 	border-radius: @radius;
 	color: @lightCoal;
 	padding: 4% 2% 4% 2%;
-	font-size: @fontSize;
+	font-size: @fSz;
 }
 
-.flex100 {
+.alignSpread(@justify, @align, @tAlign) {
 	display: flex;
-	width: 100%;
-}
-
-.sharedAnimation(@opacity, @animation, @delay) {
-	transform: translateY(0);
-	opacity: @opacity;
-	animation-name: @animation;
-	animation-timing-function: ease;
-	animation-duration: 3s;
-	animation-fill-mode: forwards;
-	animation-delay: @delay;
+	width: 96%;
+	padding: 1%;
+	margin: 1%;
+	justify-content: @justify;
+	align-items: @align;
+	text-align: @tAlign;
 }
 
 .mainContentAnimation(@aName, @aDelay) {
@@ -46,15 +41,6 @@
 	-ms-transform-origin: 50% 50%;
 }
 
-.alignSpread(@justify, @align) {
-	display: flex;
-	width: 96%;
-	padding: 1%;
-	margin: 1%;
-	justify-content: @justify;
-	align-items: @align;
-}
-
 .pageAnimation(@pADelay) {
 	animation: pageTopDown ease-in-out 2s;
 	animation-iteration-count: 1;
@@ -72,4 +58,9 @@
 	-ms-animation: pageTopDown ease-in-out 2s;
 	-ms-animation-iteration-count: 1;
 	-ms-transform-origin: 50% 50%;
+}
+
+.polyline(@pLDelay) {
+	animation: checkmark 0.5s ease-in-out 0.7s backwards 1;
+	animation-delay: @pLDelay;
 }
