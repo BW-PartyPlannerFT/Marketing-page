@@ -14,6 +14,7 @@ body {
 	width: 96%;
 	margin: 0 auto;
 	padding-left: 1%;
+	overflow-y: hidden;
 }
 
 #mainPage {
@@ -44,15 +45,13 @@ h3,
 h4,
 h5,
 h6 {
-	.sharedAnimation(0, titleAnimation, 2s);
 }
 
 p {
-	.sharedAnimation(0, titleAnimation, 1s);
+	.sharedAnimation(0, titleAnimation, 4s);
 }
 
 img {
-	.sharedAnimation(0, titleAnimation, 0s);
 	max-width: 100%;
 }
 
@@ -71,6 +70,13 @@ a:hover {
 
 #features {
 	margin-bottom: 10%;
+	.pageAnimation(0s);
+}
+
+#support {
+	.mainContentAnimation(h1Right, 0s);
+	.pageAnimation(0s);
+	overflow-y: hidden;
 }
 
 .featureAlt {
@@ -94,8 +100,16 @@ a:hover {
 	.alignSpread(center, center);
 }
 
+#content1 {
+	.mainContentAnimation(h1Left, 0s);
+}
+
 #content1h12 {
 	margin-left: 20%;
+}
+
+#content2 {
+	.mainContentAnimation(h1Right, 3s);
 }
 
 #content2h1 {
@@ -115,6 +129,7 @@ a:hover {
 	margin-bottom: 5%;
 	justify-content: center;
 	text-align: center;
+	.mainContentAnimation(h1Left, 6s);
 }
 
 #content4 {
@@ -123,6 +138,7 @@ a:hover {
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	.mainContentAnimation(h1Right, 8s);
 
 	img {
 		margin-left: 10%;
@@ -148,6 +164,7 @@ a:hover {
 
 #content5 {
 	text-align: center;
+	.mainContentAnimation(h1Left, 10s);
 
 	#content5h1 {
 		text-align: center;
@@ -164,6 +181,8 @@ a:hover {
 #about {
 	width: 70%;
 	justify-content: center;
+	.pageAnimation(0s);
+	overflow-y: hidden;
 }
 
 .teamRight {
@@ -181,10 +200,19 @@ a:hover {
 #login {
 	width: 65%;
 	margin: 5%;
+	.pageAnimation(0s);
+	overflow-y: hidden;
+
+	.mainH {
+		justify-content: center;
+	}
 }
+
 .panel-default {
-	margin: 5%;
+	margin: 2.5% 0 2.5% 0;
 	width: 100%;
+	align-content: left;
+	text-align: left;
 }
 
 .mainH {
