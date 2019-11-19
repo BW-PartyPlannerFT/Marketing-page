@@ -1,3 +1,6 @@
+// all keyframes and also checkmark-related items
+
+// animation from outside left to centered where it will rest
 @keyframes h1Left {
 	0% {
 		transform: translate(-391px, 0px);
@@ -48,6 +51,7 @@
 	}
 }
 
+// animation from outside right to centered where it will rest
 @keyframes h1Right {
 	0% {
 		transform: translate(324px, 0px);
@@ -98,6 +102,7 @@
 	}
 }
 
+// animation from outside bottom up to centered where it will rest
 @keyframes pageTopDown {
 	0% {
 		opacity: 0;
@@ -174,6 +179,7 @@
 	}
 }
 
+// checkmark animation
 @keyframes checkmark {
 	0% {
 		stroke-dashoffset: 50px;
@@ -214,10 +220,12 @@
 	}
 }
 
+// the actual checkmark animation/graphic
 svg {
 	margin-right: -100%;
 }
 
+// checkmarks for each to-do item
 #sqCheck1 {
 	polyline {
 		.polyline(3s);

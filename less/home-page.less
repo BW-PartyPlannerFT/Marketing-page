@@ -10,6 +10,7 @@ body {
 	overflow-x: hidden;
 }
 
+// whole page container
 .container {
 	width: 96%;
 	padding: 0;
@@ -17,14 +18,17 @@ body {
 	overflow-x: hidden;
 }
 
+// container holding the individual pages (features, support, about, etc)
 #mainPage {
 	.alignSpread(center, center, center);
 }
 
+// bootstrap row
 .row {
 	margin: 0;
 }
 
+// font settings
 h1 {
 	font-size: 4rem;
 }
@@ -37,10 +41,6 @@ h3 {
 	font-size: 3rem;
 }
 
-img {
-	max-width: 100%;
-}
-
 a {
 	color: @paleRed;
 
@@ -49,6 +49,11 @@ a {
 	}
 }
 
+img {
+	max-width: 100%;
+}
+
+// individual clicked-to pages settings (features, support, about, etc)
 .page {
 	display: none;
 	.pageAnimation(0s);
@@ -57,11 +62,7 @@ a {
 	width: 70%;
 }
 
-.featureAlt {
-	text-align: left;
-	justify-content: left;
-}
-
+// deep red h1, alternating colors
 .altH1 {
 	color: @debianRed;
 	.alignSpread(right, center, center);
@@ -79,6 +80,9 @@ a {
 	justify-content: center;
 }
 
+// different page sections of the upper half
+
+//from top header to next headline
 #content1 {
 	.mainContentAnimation(h1Left, 0s);
 
@@ -87,6 +91,7 @@ a {
 	}
 }
 
+// second is red h1 + pic
 #content2 {
 	.mainContentAnimation(h1Right, 3s);
 
@@ -95,12 +100,14 @@ a {
 	}
 }
 
+// third is 'trust us' heading only
 #content3 {
 	.alignSpread(center, center, center);
 	.mainContentAnimation(h1Left, 6s);
 	margin: 5% 0 5% 0;
 }
 
+// fourth is picture + 'and you won't
 #content4 {
 	.alignSpread(space-evenly, center, center);
 	margin: 2% 0 2% 0;
@@ -116,18 +123,19 @@ a {
 		align-items: center;
 		height: 100%;
 	}
-}
 
-.content4c {
-	width: 100%;
+	.content4c {
+		width: 100%;
 
-	h1 {
-		margin: 13% 0 13% 0;
-		justify-content: left;
-		align-items: left;
+		h1 {
+			margin: 13% 0 13% 0;
+			justify-content: left;
+			align-items: left;
+		}
 	}
 }
 
+// fifth is 'download' heading only
 #content5 {
 	text-align: center;
 	.mainContentAnimation(h1Left, 10s);
@@ -142,19 +150,31 @@ a {
 	.alignSpread(center, center, center);
 }
 
-.teamRight {
-	.alignSpread(right, right, right);
-	flex-wrap: wrap;
+// these all correspond with a link in the header that, when clicked, will load this page in place of 'features', which is what loads automatically.
+#about {
+	// alignment for right-aligned rows 2, 4, 6
+	.teamRight {
+		.alignSpread(right, right, right);
+		flex-wrap: wrap;
+	}
 }
 
 #features {
 	margin-bottom: 10%;
 
+	//to-do list in #features
+	.featureAlt {
+		text-align: left;
+		justify-content: left;
+	}
+
+	//container holding to-do list
 	.checkList {
 		width: 100%;
 		margin: 0 0 0 10%;
 	}
 
+	// box that gets checked
 	.sqCheck {
 		border: 1px solid @lightCoal;
 		border-radius: 10px;
@@ -166,29 +186,28 @@ a {
 	width: 100%;
 	font-size: 2rem;
 
+	// this uses bootstrap accordion
 	.panel-default {
+		.alignSpread(left, left, left);
+		margin: 2.5% 0 2.5% 0;
 		flex-wrap: wrap;
 	}
 
 	.panel-heading {
 		width: 100%;
 	}
-}
 
-.panel-default {
-	.alignSpread(left, left, left);
-	margin: 2.5% 0 2.5% 0;
-}
-
-.panel-group {
-	width: 80%;
-	flex-wrap: wrap;
+	.panel-group {
+		width: 80%;
+		flex-wrap: wrap;
+	}
 }
 
 #login {
 	width: 70%;
 	margin: 5%;
 
+	//login heading
 	.mainH {
 		justify-content: center;
 	}

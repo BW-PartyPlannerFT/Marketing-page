@@ -109,19 +109,33 @@
 		flex-wrap: nowrap;
 	}
 
-	.teamName {
-		font-size: 2.25rem;
-	}
+	#about {
+		.teamName {
+			font-size: 2.25rem;
+		}
 
-	.teamTitle {
-		font-size: 2.25rem;
-	}
+		.teamTitle {
+			font-size: 2.25rem;
+		}
 
-	.teamRight {
-		justify-content: center;
-		text-align: center;
-		margin: 0;
-		padding: 0;
+		.teamRight {
+			justify-content: center;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+		}
+
+		#jOmollo,
+		#cFletcher,
+		#sHabib {
+			.mainContentAnimation(h1Left, 0s);
+		}
+
+		#bJoshua,
+		#jCovo,
+		#eIngram {
+			.mainContentAnimation(h1Right, 0s);
+		}
 	}
 
 	.col-3 {

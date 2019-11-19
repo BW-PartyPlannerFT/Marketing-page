@@ -1,5 +1,5 @@
-// Mixins in here
-
+// button mixin with good standard settings
+// may need to change colors
 .btnMixin(@justify, @align, @radius) {
 	display: flex;
 	width: 85%;
@@ -12,6 +12,7 @@
 	font-size: @fSz;
 }
 
+// flex + small padding/margin + specify alignment
 .alignSpread(@justify, @align, @tAlign) {
 	display: flex;
 	width: 96%;
@@ -22,6 +23,8 @@
 	text-align: @tAlign;
 }
 
+// covers animations in from either side
+// specify name () and delay amount
 .mainContentAnimation(@aName, @aDelay) {
 	animation: @aName ease-in-out 3s;
 	animation-iteration-count: 1;
@@ -41,6 +44,8 @@
 	-ms-transform-origin: 50% 50%;
 }
 
+// covers the lower half/individual pages towards the bottom
+// specify delay amount
 .pageAnimation(@pADelay) {
 	animation: pageTopDown ease-in-out 2s;
 	animation-iteration-count: 1;
@@ -60,6 +65,7 @@
 	-ms-transform-origin: 50% 50%;
 }
 
+// checkmark animation, specify delay, how fast it's being 'checked'
 .polyline(@pLDelay) {
 	animation: checkmark 0.5s ease-in-out 0.7s backwards 1;
 	animation-delay: @pLDelay;

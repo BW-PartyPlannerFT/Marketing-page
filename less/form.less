@@ -2,6 +2,7 @@
 	cursor: pointer;
 }
 
+// this form is not a pop-up, but i have a skeleton i use that is normally a popup
 .form-popup {
 	display: none;
 	position: fixed;
@@ -10,7 +11,7 @@
 	border: 3px solid @lightCoal;
 	z-index: 9;
 }
-
+// container holding form
 .form-container {
 	padding: 10px;
 	background-color: @outerSpace;
@@ -26,6 +27,7 @@
 	.alignSpread(center, center, center);
 }
 
+//input fields from form container
 .form-container input {
 	width: 60%;
 	padding: 15px;
@@ -34,12 +36,14 @@
 	background: @outerSpace;
 }
 
+// text input fields in form when focused
 .form-container input[type=text]:focus {
 	background-color: @paleRed;
 	outline: none;
 	color: @paleRed;
 }
 
+// form buttons
 .form-container .btn {
 	background-color: @debianRed;
 	color: @lightCoal;
@@ -53,22 +57,25 @@
 	justify-content: center;
 }
 
+// cancel
 .form-container .cancel {
 	background-color: @lightCoal;
 	color: @paleBlue;
 }
 
+// hover
 .form-container .btn:hover,
 .open-button:hover {
 	opacity: 1;
 }
-
+// each row of form
 .formRow {
 	justify-content: center;
 	padding: 0;
 	width: 100%;
 }
 
+//message box settings
 #message {
 	width: 45%;
 	height: 35%;
