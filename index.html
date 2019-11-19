@@ -38,21 +38,23 @@
 
         </header>
 
+        <!-- first headline + picture -->
         <section id="content1" class="bodyContent">
             <div>
                 <h1 id="content1h1" class="mainH1">Whether you're planning this...</h1>
             </div>
             <div><img src="img/wedding2.jpg" alt="large fancy party, wedding"></div>
         </section>
-
+        <!-- second headline + picture -->
         <section id="content2" class="bodyContent">
             <h1 id="content2h1" class="altH1">...or this...</h1>
             <div><img src="img/2-dog-party.jpg" alt="birthday party for a dog with cake with candles on a table"></div>
         </section>
-
+        <!-- third headline only -->
         <section id="content3" class="bodyContent row">
             <h1 id="content3h1">Trust us to help you organize your party,</h1>
         </section>
+        <!-- fourth headline + picture -->
         <section id="content4" class="bodyContent row">
             <div class="col-8">
                 <img src=" img/3-fancy-party3.jpg"
@@ -78,13 +80,15 @@
                 </h1>
             </div>
         </section>
-
+        <!-- 'download' headline only -->
         <section id="content5" class="bodyContent row">
             <h1 id="content5h1" class="altH1"><a href="#">Download PPlannr today.</a></h1>
         </section>
 
+        <!-- container which loads linked pages when clicked -->
         <section id="mainPage" class="mainPage row">
 
+            <!-- features page -->
             <section id="features" class="row page">
 
                 <div id="mainPageH1f" class="row mainH1">
@@ -159,7 +163,7 @@
                 </div>
             </section>
 
-
+            <!-- support page -->
             <section id="support" class="row page">
                 <div class="aboutRow row">
                     <h1 id="mainPageH1s" class="mainH1">Support:</h1>
@@ -256,7 +260,7 @@
             </section>
 
 
-
+            <!-- about team page -->
             <section id="about" class="row page">
 
                 <div id="mainPageH1a" class="aboutRow mainH1 row">
@@ -371,7 +375,7 @@
 
             </section>
 
-
+            <!-- login page  -->
             <section id="login" class="row page">
 
                 <div id="mainPageH1l" class="row mainH" order="1">
@@ -425,8 +429,11 @@
         </footer>
 
 
-
     </section>
+    <!-- The following script:
+            1.  gets current page ID (features, support, etc) 
+            2.  display:none's all pages
+            3.  displays the page clicked -->
     <script>
         function toggleMainFrameVis(pageID) {
             console.log(pageID);
