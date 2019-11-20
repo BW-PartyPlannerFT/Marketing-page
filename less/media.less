@@ -1,223 +1,311 @@
 @media (@mobile) {
-	html,
-	body,
-	.container {
-		margin: 0;
-		width: 100%;
-	}
 
-	.header,
-	.footer {
-		a {
-			font-size: 2rem;
-		}
+    html,
+    body,
+    .container {
+        margin: 0;
+        width: 100%;
+    }
 
-		width: 100%;
-		justify-content: space-evenly;
-		margin: 0%;
-		padding: 0;
-		z-index: 3;
-	}
+    .header,
+    .footer {
+        a {
+            font-size: 2rem;
+        }
 
-	#content4 {
-		img {
-			margin: 0 0 0 3%;
-		}
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0%;
+        padding: 0;
+        z-index: 3;
 
-		h1 {
-			font-size: 3rem;
-		}
-	}
+        #headerCompanyName {
+            width: 100%;
+            flex-wrap: nowrap;
+        }
+    }
 
-	#content5 {
-		width: 100%;
-	}
+    #content4 {
+        img {
+            margin: 0 0 0 3%;
+        }
 
-	#features {
-		width: 100%;
-		margin-bottom: 10%;
+        h1 {
+            font-size: 3rem;
+        }
+    }
 
-		h1 {
-			margin-bottom: 2%;
-		}
+    #content5 {
+        width: 100%;
+    }
 
-		h3 {
-			font-size: 2.5rem;
-		}
+    #features {
+        width: 100%;
+        margin-bottom: 10%;
 
-		.checkList {
-			width: 100%;
-			margin: 0 0 0 3%;
-		}
+        h1 {
+            margin-bottom: 2%;
+        }
 
-		.sqCheck {
-			border: 1px solid @lightCoal;
-			border-radius: 10px;
-			margin-bottom: 2%;
-			max-width: 10%;
-			max-height: 45px;
-		}
+        h3 {
+            font-size: 2.5rem;
+        }
 
-		.featureAlt {
-			margin-bottom: 2%;
-		}
-	}
+        .checkList {
+            width: 100%;
+            margin: 0 0 0 3%;
+        }
 
-	.page {
-		width: 100%;
-	}
+        .sqCheck {
+            border: 1px solid @lightCoal;
+            border-radius: 10px;
+            margin-bottom: 2%;
+            max-width: 10%;
+            max-height: 45px;
+        }
 
-	#support {
-		overflow-x: hidden;
+        .featureAlt {
+            margin-bottom: 2%;
+        }
+    }
 
-		h2 {
-			margin-top: 10%;
-			text-align: center;
-			width: 100%;
-		}
+    .page {
+        width: 100%;
+    }
 
-		textarea {
-			width: 80%;
-		}
+    #support {
+        overflow-x: hidden;
 
-		input {
-			width: 80%;
-		}
+        h2 {
+            margin-top: 10%;
+            text-align: center;
+            width: 100%;
+        }
 
-		.form-container {
-			width: 100%;
+        textarea {
+            width: 80%;
+        }
 
-			#buttonRow {
-				display: flex;
-				flex-wrap: nowrap;
-				width: 100%;
+        input {
+            width: 80%;
+        }
 
-				.btn {
-					margin: 0;
-					margin-top: 3.5%;
-					width: 70%;
-				}
-			}
-		}
+        .form-container {
+            width: 100%;
 
-		.form-container input {
-			width: 100%;
-		}
-	}
+            #buttonRow {
+                display: flex;
+                flex-wrap: nowrap;
+                width: 100%;
 
-	.aboutRow {
-		flex-wrap: nowrap;
-	}
+                .btn {
+                    margin: 0;
+                    margin-top: 3.5%;
+                    width: 70%;
+                }
+            }
+        }
 
-	#about {
-		.teamName {
-			font-size: 2.25rem;
-		}
+        .form-container input {
+            width: 100%;
+        }
+    }
 
-		.teamTitle {
-			font-size: 2.25rem;
-		}
+    .aboutRow {
+        flex-wrap: nowrap;
+    }
 
-		.teamRight {
-			justify-content: center;
-			text-align: center;
-			margin: 0;
-			padding: 0;
-		}
+    #about {
+        width: 85%;
 
-		#jOmollo,
-		#cFletcher,
-		#sHabib {
-			.mainContentAnimation(h1Left, 0s);
-		}
+        .teamName {
+            font-size: 2.25rem;
+        }
 
-		#bJoshua,
-		#jCovo,
-		#eIngram {
-			.mainContentAnimation(h1Right, 0s);
-		}
-	}
+        .teamTitle {
+            font-size: 2.25rem;
+        }
 
-	.col-3 {
-		width: 45%;
-		max-width: 45%;
-		margin: 0;
-		padding: 0;
-	}
+        .teamRight {
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
 
-	#login {
-		.form-container {
-			width: 100%;
+        #jOmollo,
+        #cFletcher,
+        #sHabib {
+            .mainContentAnimation(h1Left, 0s);
+        }
 
-			#buttonRow {
-				display: flex;
-				flex-wrap: nowrap;
-				width: 100%;
+        #bJoshua,
+        #jCovo,
+        #eIngram {
+            .mainContentAnimation(h1Right, 0s);
+        }
 
-				.btn {
-					margin: 0;
-					width: 70%;
-				}
-			}
-		}
+        .aboutRow .col-3 {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            max-height: 100%;
 
-		.form-container input {
-			width: 100%;
-		}
-	}
+            img {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+    }
+
+    #login {
+        .form-container {
+            width: 100%;
+
+            #buttonRow {
+                display: flex;
+                flex-wrap: nowrap;
+                width: 100%;
+
+                .btn {
+                    margin: 0;
+                    width: 70%;
+                }
+            }
+        }
+
+        .form-container input {
+            width: 100%;
+        }
+    }
+
+    #message {
+        width: 85%;
+        height: 55%;
+    }
+
+    #support {
+        .form-container input {
+            width: 100%;
+        }
+    }
 }
 
 @media (@tablet) {
-	#content1 {
-		h1 {
-			margin: 0%;
-		}
-	}
+    #content1 {
+        h1 {
+            margin: 0%;
+        }
+    }
 
-	#content4 {
-		h1 {
-			margin-left: 10%;
-		}
-	}
+    #content4 {
+        .content4c h1 {
+            margin-left: 15%;
+        }
+    }
 
-	#content5 {
-		width: 100%;
+    #content5 {
+        width: 100%;
+		flex-wrap: nowrap;
+        a {
+            font-size: 3rem;
+        }
+    }
 
-		a {
-			font-size: 3.5rem;
-		}
-	}
+    #features {
+        width: 100%;
+        margin-bottom: 10%;
 
-	#features {
-		width: 100%;
-		margin-bottom: 10%;
+        h1 {
+            margin-bottom: 2%;
+        }
 
-		h1 {
-			margin-bottom: 2%;
-		}
+        .checkList {
+            width: 100%;
+            margin: 0 0 0 3%;
+        }
 
-		.checkList {
-			width: 100%;
-			margin: 0 0 0 3%;
-		}
+        .sqCheck {
+            border: 1px solid @lightCoal;
+            border-radius: 10px;
+            margin-bottom: 2%;
+            max-width: 10%;
+            max-height: 45px;
+        }
 
-		.sqCheck {
-			border: 1px solid @lightCoal;
-			border-radius: 10px;
-			margin-bottom: 2%;
-			max-width: 10%;
-			max-height: 45px;
-		}
+        .featureAlt {
+            margin-bottom: 2%;
+        }
+    }
 
-		.featureAlt {
-			margin-bottom: 2%;
-		}
-	}
+    #message {
+        width: 85%;
+        height: 55%;
+    }
 
-	.header,
-	.footer {
-		a {
-			font-size: 2.5rem;
-		}
-	}
+    #support {
+        .form-container input {
+            width: 100%;
+        }
+
+        #mainPageH1l {
+            margin-top: 10%;
+            justify-content: center;
+            text-align: center;
+
+        }
+    }
+
+    .header,
+    .footer {
+        a {
+            font-size: 2.5rem;
+        }
+    }
+
+    #about {
+        overflow-x: hidden;
+
+        .teamName {
+            font-size: 2.25rem;
+        }
+
+        .teamTitle {
+            font-size: 2.25rem;
+        }
+
+        .teamRight {
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #jOmollo,
+        #cFletcher,
+        #sHabib {
+            .mainContentAnimation(h1Left, 0s);
+        }
+
+        #bJoshua,
+        #jCovo,
+        #eIngram {
+            .mainContentAnimation(h1Right, 0s);
+        }
+    }
+
+    .aboutRow .col-3 {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        max-height: 100%;
+
+        img {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    }
 }

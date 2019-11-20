@@ -1,94 +1,104 @@
 .open-button {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 // this form is not a pop-up, but i have a skeleton i use that is normally a popup
 .form-popup {
-	display: none;
-	position: fixed;
-	bottom: 0;
-	right: 15px;
-	border: 3px solid @lightCoal;
-	z-index: 9;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid @lightCoal;
+    z-index: 9;
 }
+
 // container holding form
 .form-container {
-	padding: 10px;
-	background-color: @outerSpace;
-	.alignSpread(center, center, center);
-	flex-wrap: wrap;
+    padding: 10px;
+    background-color: @outerSpace;
+    .alignSpread(center, center, center);
+    flex-wrap: wrap;
 
-	.row {
-		margin: 0;
-	}
+    .row {
+        margin: 0;
+    }
+
+    #buttonRow {
+		flex-direction: column;
+		width: 100%;
+		flex-wrap: nowrap;
+    }
 }
 
 .formClass {
-	.alignSpread(center, center, center);
+    .alignSpread(center, center, center);
 }
 
 //input fields from form container
 .form-container input {
-	width: 60%;
-	padding: 15px;
-	margin: 5px 0 22px 0;
-	border: 1px solid @debianRed;
-	background: @outerSpace;
+    width: 60%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: 1px solid @debianRed;
+    background: @outerSpace;
 }
 
 // text input fields in form when focused
 .form-container input[type=text]:focus {
-	background-color: @paleRed;
-	outline: none;
-	color: @paleRed;
+    background-color: @paleRed;
+    outline: none;
+    color: @paleRed;
 }
 
 // form buttons
 .form-container .btn {
-	background-color: @debianRed;
-	color: @lightCoal;
-	padding: 16px 20px;
-	border: none;
-	cursor: pointer;
-	width: 45%;
-	max-height: 25%;
-	margin-bottom: 10px;
-	opacity: 0.8;
-	justify-content: center;
+    background-color: @debianRed;
+    color: @lightCoal;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 45%;
+    max-height: 25%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    justify-content: center;
+
 }
 
 // cancel
 .form-container .cancel {
-	background-color: @lightCoal;
-	color: @paleBlue;
+    background-color: @lightCoal;
+    color: @paleBlue;
 }
 
 // hover
 .form-container .btn:hover,
 .open-button:hover {
-	opacity: 1;
+    opacity: 1;
 }
+
 // each row of form
 .formRow {
-	justify-content: center;
-	padding: 0;
-	width: 100%;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
 }
 
 //message box settings
 #message {
-	width: 45%;
-	height: 35%;
+    width: 45%;
+    height: 35%;
 	font-size: 2rem;
+	resize: none;
 }
 
 textarea {
-	background-color: @lightCoal;
-	color: @paleBlue;
+    background-color: @lightCoal;
+    color: @paleBlue;
 }
 
 label,
 input {
-	font-size: 2rem;
-	color: @paleBlue;
+    font-size: 2rem;
+    color: @paleBlue;
 }
