@@ -342,6 +342,7 @@ svg {
   align-items: center;
   text-align: center;
   margin: 0;
+  width: 100%;
 }
 .header a,
 .footer a {
@@ -441,6 +442,14 @@ img {
   overflow-y: hidden;
   justify-content: center;
   width: 70%;
+}
+.page #mainPageH1l {
+  text-align: center;
+  justify-content: center;
+}
+.page #mainPageH1l h2 {
+  text-align: center;
+  justify-content: center;
 }
 .altH1 {
   color: #cf1259;
@@ -691,7 +700,8 @@ img {
 }
 #faq {
   width: 100%;
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: 'Kalam', cursive;
 }
 #faq .panel-default {
   display: flex;
@@ -715,6 +725,9 @@ img {
   width: 70%;
   margin: 5%;
 }
+#login input {
+  font-family: 'Kalam', cursive;
+}
 #login .mainH {
   justify-content: center;
 }
@@ -728,6 +741,9 @@ img {
   color: #4f6272;
   padding: 4% 2% 4% 2%;
   font-size: 16px;
+}
+#support input {
+  font-family: 'Kalam', cursive;
 }
 .open-button {
   cursor: pointer;
@@ -884,6 +900,14 @@ input {
   #support {
     overflow-x: hidden;
   }
+  #support #faq #accordion .panel-group,
+  #support #faq #accordion .panel-default,
+  #support #faq #accordion .panel-body h4,
+  #support #faq #accordion a {
+    font-family: 'Kalam', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+  }
   #support h2 {
     margin-top: 10%;
     text-align: center;
@@ -910,6 +934,8 @@ input {
   }
   #support .form-container input {
     width: 100%;
+    font-family: 'Kalam', cursive;
+    font-size: 2.5rem;
   }
   .aboutRow {
     flex-wrap: nowrap;
@@ -991,16 +1017,18 @@ input {
   #login .form-container #buttonRow .btn {
     margin: 0;
     width: 70%;
+    height: 100%;
   }
   #login .form-container input {
     width: 100%;
+    font-family: 'Kalam', cursive;
+    font-size: 2.5rem;
   }
   #message {
     width: 85%;
     height: 55%;
-  }
-  #support .form-container input {
-    width: 100%;
+    font-family: 'Kalam', cursive;
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 800px) {
@@ -1041,14 +1069,8 @@ input {
   #message {
     width: 85%;
     height: 55%;
-  }
-  #support .form-container input {
-    width: 100%;
-  }
-  #support #mainPageH1l {
-    margin-top: 10%;
-    justify-content: center;
-    text-align: center;
+    font-family: 'Kalam', cursive;
+    font-size: 2.5rem;
   }
   .header a,
   .footer a {
@@ -1056,6 +1078,7 @@ input {
   }
   #about {
     overflow-x: hidden;
+    width: 95%;
   }
   #about .teamName {
     font-size: 2.25rem;
@@ -1119,5 +1142,49 @@ input {
     height: 100%;
     margin: 0;
     padding: 0;
+  }
+  #support .form-container input {
+    width: 100%;
+    font-family: 'Kalam', cursive;
+    font-size: 2.5rem;
+  }
+  #support #mainPageH1l {
+    margin-top: 10%;
+    justify-content: center;
+    text-align: center;
+  }
+  #support #faq #accordion .panel-group,
+  #support #faq #accordion .panel-default,
+  #support #faq #accordion .panel-body h4,
+  #support #faq #accordion a {
+    font-family: 'Kalam', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+  }
+  #support #faq .form-container {
+    width: 100%;
+  }
+  #support #faq .form-container #buttonRow {
+    display: flex;
+    width: 100%;
+  }
+  #support #faq .form-container #buttonRow .formRow button,
+  #support #faq .form-container #buttonRow .formRow .btn {
+    margin: 0;
+    margin-top: 3.5%;
+    width: 70%;
+  }
+  #login .form-container {
+    width: 100%;
+  }
+  #login .form-container .btn {
+    margin: 0;
+    width: 70%;
+    height: 100%;
+  }
+  #login .form-container input {
+    width: 100%;
+    font-family: 'Kalam', cursive;
+    font-size: 2.5rem;
   }
 }

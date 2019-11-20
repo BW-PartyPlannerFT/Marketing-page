@@ -76,6 +76,20 @@
     #support {
         overflow-x: hidden;
 
+        #faq {
+            #accordion {
+
+                .panel-group,
+                .panel-default,
+                .panel-body h4,
+                a {
+                    font-family: @altFont;
+                    font-size: 2.5rem;
+                    margin-bottom: 5%;
+                }
+            }
+        }
+
         h2 {
             margin-top: 10%;
             text-align: center;
@@ -108,6 +122,8 @@
 
         .form-container input {
             width: 100%;
+            font-family: @altFont;
+            font-size: 2.5rem;
         }
     }
 
@@ -172,25 +188,25 @@
                 .btn {
                     margin: 0;
                     width: 70%;
+                    height: 100%;
                 }
             }
         }
 
         .form-container input {
             width: 100%;
+            font-family: @altFont;
+            font-size: 2.5rem;
         }
     }
 
     #message {
         width: 85%;
         height: 55%;
+        font-family: @altFont;
+        font-size: 2.5rem;
     }
 
-    #support {
-        .form-container input {
-            width: 100%;
-        }
-    }
 }
 
 @media (@tablet) {
@@ -208,7 +224,8 @@
 
     #content5 {
         width: 100%;
-		flex-wrap: nowrap;
+        flex-wrap: nowrap;
+
         a {
             font-size: 3rem;
         }
@@ -243,20 +260,10 @@
     #message {
         width: 85%;
         height: 55%;
+        font-family: @altFont;
+        font-size: 2.5rem;
     }
 
-    #support {
-        .form-container input {
-            width: 100%;
-        }
-
-        #mainPageH1l {
-            margin-top: 10%;
-            justify-content: center;
-            text-align: center;
-
-        }
-    }
 
     .header,
     .footer {
@@ -267,6 +274,7 @@
 
     #about {
         overflow-x: hidden;
+        width: 95%;
 
         .teamName {
             font-size: 2.25rem;
@@ -308,4 +316,72 @@
             padding: 0;
         }
     }
+
+    #support {
+        .form-container input {
+            width: 100%;
+            font-family: @altFont;
+            font-size: 2.5rem;
+        }
+
+        #mainPageH1l {
+            margin-top: 10%;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        #faq {
+            #accordion {
+
+                .panel-group,
+                .panel-default,
+                .panel-body h4,
+                a {
+                    font-family: @altFont;
+                    font-size: 2.5rem;
+                    margin-bottom: 5%;
+                }
+            }
+
+            .form-container {
+                width: 100%;
+
+                #buttonRow {
+                    display: flex;
+                    width: 100%;
+
+                    .formRow {
+
+                        button, .btn {
+                                margin: 0;
+                                margin-top: 3.5%;
+                                width: 70%;
+                            }
+                    
+                    }
+                }
+            }
+        }
+    }
+
+    #login {
+        .form-container {
+            width: 100%;
+
+            .btn {
+                margin: 0;
+                width: 70%;
+                height: 100%;
+            }
+
+        }
+
+        .form-container input {
+            width: 100%;
+            font-family: @altFont;
+            font-size: 2.5rem;
+        }
+    }
+
 }

@@ -60,6 +60,17 @@ img {
     overflow-y: hidden;
     justify-content: center;
     width: 70%;
+
+    #mainPageH1l {
+        text-align: center;
+        justify-content: center;
+
+        h2 {
+            text-align: center;
+            justify-content: center;
+        }
+
+    }
 }
 
 // deep red h1, alternating colors
@@ -152,7 +163,8 @@ img {
 
 // these all correspond with a link in the header that, when clicked, will load this page in place of 'features', which is what loads automatically.
 #about {
-	overflow-x: hidden;
+    overflow-x: hidden;
+
     .aboutRow {
         flex-wrap: nowrap;
     }
@@ -202,7 +214,8 @@ img {
 
 #faq {
     width: 100%;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: @altFont;
 
     // this uses bootstrap accordion
     .panel-default {
@@ -225,6 +238,10 @@ img {
     width: 70%;
     margin: 5%;
 
+    input {
+        font-family: @altFont;
+    }
+
     //login heading
     .mainH {
         justify-content: center;
@@ -233,4 +250,12 @@ img {
 
 .btn {
     .btnMixin(center, center, 10px);
+}
+
+#support {
+
+
+    input {
+        font-family: @altFont;
+    }
 }
